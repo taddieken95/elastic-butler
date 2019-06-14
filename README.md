@@ -6,7 +6,7 @@ Whereas other services issue notifications based on pre-determined parameters, E
 
 Such examples include, but are not limited to:
 - Notify me by mail if there are more than 10 fail login attempts in the last 20 minutes
-- Notify me by if we sell more than 1000 iphones in the last day
+- Notify me by SMS text if we sell more than 1000 iphones in the last day
 
 
 ## Get Started
