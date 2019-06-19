@@ -54,14 +54,14 @@ Let's put this into practice. Let's say we have a user that wishes to keep track
         "period": "10 m"
     },
     "action": {
-        "type": "gmail",
-        "to": "destination@email.com",
+        "type": "email",
+        "to": "destination@gmail.com",
         "subject": "[#hits#] hits at [#application# #recipe#]",
         "body": "<p>Your recipe results:</p> #detail#"
     }
 }
 ```
-Here, the user has decided that they wish to receive an e-mail every time their website is visited by 10 people.
+Here, the user has decided that they wish to have an e-mail ("type": "gmail") sent to destination@gmail.com ("to": "destination@gmail.com") every time their application is visited. However, to avoid a large amount of email notifications, the user has dictated that they only wish to receive a maximum of 10 notifications ("limit": 10) within a 10 minute period ("period": "10 m").
 
 ### Creating Your First Recipe
 
