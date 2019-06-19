@@ -35,7 +35,7 @@ Elastic butler will store the [recipes](#recipes) along with the execution resul
 
 ## Recipes
 
-A recipe is a description of the scenario a user desires a notification for. Once the specified parameter of the recipe has been achieved, the user will receive a notification through the channel of their choice (which is also dictated by the recipe). 
+A recipe is the description of the scenario a user desires a notification for. Once the specified parameter of the recipe has been achieved, the user will receive a notification through the channel of their choice (which is also dictated by the recipe). 
 
 Let's put this into practice. Let's say we have a user that wishes to keep track of their application's traffic. To do so, they create the following recipe:
 
