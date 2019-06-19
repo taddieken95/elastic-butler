@@ -31,7 +31,7 @@ Butler uses the @timestamp field to do the "period" filter. [Make sure your inde
 
 A file **config/env.json** exists to allow the user to provide configuration for this application. This includes things such as Sender Configuration and Data Store Configuration.
 
-Elastic butler will store the [recipes](#recipes) along with the execution result at an Elastic Search Index. This allows the user to build dashboards and visualizations about their alerts! The user could even generate alerts about their alerts, if they desired to (ex: *Notify me if I receive 10 notifications*)
+Elastic butler will store the [recipes](#recipes) along with the execution result at an Elastic Search Index. This allows the user to build dashboards and visualizations about their alerts! The user could even generate alerts about their alerts (ex: *Notify me if I receive 10 notifications*)
 
 ## Recipes
 
