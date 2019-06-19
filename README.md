@@ -61,7 +61,7 @@ Let's put this into practice. Let's say we have a user that wishes to keep track
     }
 }
 ```
-Here, the user has decided that they wish to have an e-mail ("type": "gmail") sent to destination@gmail.com ("to": "destination@gmail.com") every time their application is visited. However, to avoid a large amount of email notifications, the user has dictated that they only wish to receive a maximum of 10 notifications ("limit": 10) within a 10 minute period ("period": "10 m").
+Here, the user has decided that they wish to have an e-mail ("type": "email") sent to destination@gmail.com ("to": "destination@gmail.com") every time their application is visited. However, to avoid a large amount of email notifications, the user has dictated that they only wish to receive a maximum of 10 notifications ("limit": 10) within a 10 minute period ("period": "10 m").
 
 ### Creating Your First Recipe
 
