@@ -29,14 +29,15 @@ Butler uses the @timestamp field to do the "period" filter. [Make sure your inde
 
 ## Configuration
 
-A file **config/env.json** exists to allow you to provide configuration for this application. This includes many things like sender configuration and data
-store configuration.
+A file **config/env.json** exists to allow the user to provide configuration for this application. This includes things such as Sender Configuration and Data Store Configuration.
 
-Elastic butler will store the [recipes](#recipes) and the execution result at a Elastic Search index this means you can build dashboards and visualizations about your alerts! You could even alert on your alerts if you wanted to. 
+Elastic butler will store the [recipes](#recipes) along with the execution result at an Elastic Search Index. This allows the user to build dashboards and visualizations about their alerts! The user could even generate alerts about their alerts, if they desired to (ex: *Notify me if I receive 10 notifications*)
 
 ## Recipes
 
-A recipe describe the operation of monitoring. This is how a recipe looks like:
+A recipe is the specific scenario a user desires a notification for. Once the specified parameter of the recipe has been achieved, the user will receive a notification through the channel of their choice (which is also dictated by the recipe). 
+
+Let's put this into practice. Let's say we have a user wishes to keep track of their application's traffic. To do so, they create the following recipe:
 
 ```json
 {
@@ -60,6 +61,9 @@ A recipe describe the operation of monitoring. This is how a recipe looks like:
     }
 }
 ```
+Here, the user has decided that they wish to receive an e-mail every time their website is visited by 10 people.
+
+### Creating Your First Recipe
 
 To create your first recipe PUT it to the store.recipeIndex ( elastic_butler_recipe by default )
 
